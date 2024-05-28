@@ -1,0 +1,41 @@
+{
+  "name": "shiki-templ",
+  "version": "0.1.1",
+  "description": "A TextMate grammar for Templ to be used with Shiki.",
+  "keywords": [
+    "shiki",
+    "syntax-highlighting",
+    "templ",
+    "go",
+    "textmate-grammar"
+  ],
+  "bugs": {
+    "url": "https://github.com/indaco/shiki-templ/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/indaco/shiki-templ"
+  },
+  "license": "MIT",
+  "author": "indaco <github@mircoveltri.me>",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "source": "src/index.js",
+  "types": "index.d.ts",
+  "files": [
+    "dist",
+    "grammars",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.4",
+    "prettier": "^3.2.5",
+    "prettier-plugin-packagejson": "^2.5.0",
+    "shiki": "^1.6.0"
+  },
+  "packageManager": "pnpm@9.1.3"
+}
