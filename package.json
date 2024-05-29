@@ -1,7 +1,7 @@
 {
   "name": "shiki-templ",
   "version": "0.1.1",
-  "description": "A TextMate grammar for Templ to be used with Shiki.",
+  "description": "Enabling Templ syntax highlighting in Shiki.",
   "keywords": [
     "shiki",
     "syntax-highlighting",

@@ -1,5 +1,6 @@
 <div align="center">
     <h1>shiki-templ</h1>
+    <h2>Enabling Templ syntax highlighting in Shiki.</h2>
     &nbsp;
     <a href="https://www.npmjs.com/package/shiki-templ" target="_blank"><img src="https://img.shields.io/npm/v/shiki-templ.svg?style=flat" alt="NPM Package" /></a>
     <a href="https://github.com/indaco/shiki-templ/blob/main/LICENSE" target="_blank">
@@ -8,7 +9,11 @@
 </div>
 <br/>
 
-The `shiki-templ` ESModule makes easier to use the [TextMate grammar definition](https://github.com/templ-go/templ-vscode/blob/main/syntaxes/templ.tmLanguage.json) for [Templ](https://templ.guide) with [Shiki](https://shiki.matsu.io/).
+`shiki-templ` makes easier to use the TextMate grammar definition for [Templ](https://templ.guide) with [Shiki](https://shiki.matsu.io/).
+
+The package tries to fetch the [online](https://github.com/templ-go/templ-vscode/blob/main/syntaxes/templ.tmLanguage.json) version of the grammar file to get the latest available and, if it fails, uses a local version as a fallback.
+
+![sample templ syntax](screenshot.png "Title")
 
 ## Installation
 
