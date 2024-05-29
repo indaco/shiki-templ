@@ -18,8 +18,9 @@
   },
   "license": "MIT",
   "author": "indaco <github@mircoveltri.me>",
+  "type": "module",
   "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "module": "dist/index.js",
   "source": "src/index.js",
   "types": "index.d.ts",
   "files": [
@@ -28,14 +29,17 @@
     "index.d.ts"
   ],
   "scripts": {
-    "build": "node build.js",
-    "format": "prettier --write ."
+    "build": "tsup",
+    "format": "prettier --write .",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "esbuild": "^0.21.4",
+    "@types/node": "^20.12.12",
     "prettier": "^3.2.5",
     "prettier-plugin-packagejson": "^2.5.0",
-    "shiki": "^1.6.0"
+    "shiki": "^1.6.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
   },
   "packageManager": "pnpm@9.1.3"
 }
