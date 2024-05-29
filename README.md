@@ -6,10 +6,9 @@
         <img src="https://img.shields.io/badge/license-mit-blue?style=flat-square&logo=none" alt="license" />
     </a>
 </div>
+<br/>
 
-`shiki-templ` provides a TextMate grammar definition for [Templ](https://templ.guide), making it easier to use with [Shiki](https://shiki.matsu.io/). The grammar definition is taken from the official Templ grammar available at [templ-go/playground](https://github.com/templ-go/playground). The goal of this package is not to define the grammar but to facilitate its use with Shiki.
-
-This package supports both CommonJS and ESModule formats.
+The `shiki-templ` ESModule makes easier to use the [TextMate grammar definition](https://github.com/templ-go/templ-vscode/blob/main/syntaxes/templ.tmLanguage.json) for [Templ](https://templ.guide) with [Shiki](https://shiki.matsu.io/).
 
 ## Installation
 
