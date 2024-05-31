@@ -1,22 +1,31 @@
-import fs from "fs";
-import path from "path";
-import { LanguageRegistration } from "shiki";
-import { fileURLToPath } from "url";
+import type { LanguageRegistration } from "shiki";
 
-// __dirname polyfill
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+// Check if running in Node.js environment
+const isNode = typeof window === "undefined";
+
+let __dirname: string;
+let fileURLToPath: (url: string | URL) => string;
+let fs: typeof import("fs");
+let path: typeof import("path");
+
+if (isNode) {
+  import("url").then((urlModule) => {
+    fileURLToPath = urlModule.fileURLToPath;
+  });
+
+  import("path").then((pathModule) => {
+    path = pathModule.default;
+    __dirname = path.dirname(fileURLToPath(import.meta.url));
+  });
+
+  import("fs").then((fsModule) => {
+    fs = fsModule.default;
+  });
+}
 
 // URL of the TextMate grammar file
 const grammarUrl =
   "https://raw.githubusercontent.com/templ-go/templ-vscode/main/syntaxes/templ.tmLanguage.json";
-
-// Path to the local TextMate grammar file
-const localGrammarPath = path.join(
-  __dirname,
-  "..",
-  "grammars",
-  "templ.tmLanguage.json",
-);
 
 // Function to fetch the grammar file from the URL
 async function fetchGrammar(url: string): Promise<any> {
@@ -29,6 +38,9 @@ async function fetchGrammar(url: string): Promise<any> {
 
 // Function to read the grammar file from the local filesystem
 function readLocalGrammar(filePath: string): any {
+  if (!isNode) {
+    throw new Error("readLocalGrammar can only be used in Node.js environment");
+  }
   const data = fs.readFileSync(filePath, "utf-8");
   return JSON.parse(data);
 }
@@ -41,6 +53,12 @@ async function getGrammar(): Promise<any> {
     return grammar;
   } catch (error) {
     console.info("Network error, loading the local fallback templ grammar!");
+    const localGrammarPath = path.join(
+      __dirname,
+      "..",
+      "grammars",
+      "templ.tmLanguage.json",
+    );
     const localGrammar = readLocalGrammar(localGrammarPath);
     return localGrammar;
   }
