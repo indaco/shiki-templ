@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.2.1
+
+### 🩹 Fixes
+
+- Dynamically import Node.js modules only if running in a Node.js environment (`isNode` is `true`). ([e60646a](https://github.com/indaco/shiki-templ/commit/e60646a))
+
+### 🏡 Chore
+
+- **package.json:** Bump packageManager to pnpm@9.1.4 ([57adebc](https://github.com/indaco/shiki-templ/commit/57adebc))
+
+### ❤️ Contributors
+
+- Indaco <github@mircoveltri.me>
+
 ## v0.2.0
 
 ### 🚀 Enhancements
