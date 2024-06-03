@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.2.2
+
+### 🩹 Fixes
+
+- Use `LanguageInput` as type instead of `LanguageRegistration` ([a9891f3](https://github.com/indaco/shiki-templ/commit/a9891f3))
+- Add "shiki" as peer dependency ([4b74a8c](https://github.com/indaco/shiki-templ/commit/4b74a8c))
+
+### ❤️ Contributors
+
+- Indaco <github@mircoveltri.me>
+
 ## v0.2.1
 
 ### 🩹 Fixes
