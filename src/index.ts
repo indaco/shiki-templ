@@ -1,4 +1,4 @@
-import type { LanguageRegistration } from "shiki";
+import type { LanguageInput } from "shiki";
 
 // Check if running in Node.js environment
 const isNode = typeof window === "undefined";
@@ -66,11 +66,12 @@ async function getGrammar(): Promise<any> {
 
 const templGrammarPromise = getGrammar();
 
-const templLangPromise: Promise<LanguageRegistration> =
-  templGrammarPromise.then((grammar) => ({
+const templLangPromise: Promise<LanguageInput> = templGrammarPromise.then(
+  (grammar) => ({
     name: "templ",
     scopeName: "source.templ",
     ...grammar,
-  }));
+  }),
+);
 
 export { templGrammarPromise as templGrammar, templLangPromise as templLang };
