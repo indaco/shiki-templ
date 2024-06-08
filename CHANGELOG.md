@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.2.3
+
+[compare changes](https://github.com/indaco/shiki-templ/compare/v0.2.2...v0.2.3)
+
+### 🚀 Enhancements
+
+- Converted readLocalGrammar to an async ([53ce432](https://github.com/indaco/shiki-templ/commit/53ce432))
+
+### 🏡 Chore
+
+- Add prefix text to output messages and errors ([b921bba](https://github.com/indaco/shiki-templ/commit/b921bba))
+- **templ.tmLanguage.json:** Updated ([73528c5](https://github.com/indaco/shiki-templ/commit/73528c5))
+- Update dev deps ([628b2a5](https://github.com/indaco/shiki-templ/commit/628b2a5))
+
+### ❤️ Contributors
+
+- Indaco <github@mircoveltri.me>
+
 ## v0.2.2
 
 ### 🩹 Fixes
