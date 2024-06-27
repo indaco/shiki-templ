@@ -11,7 +11,10 @@
 
 `shiki-templ` makes easier to use the TextMate grammar definition for [Templ](https://templ.guide) with [Shiki](https://shiki.matsu.io/).
 
-The package tries to fetch the [online](https://github.com/templ-go/templ-vscode/blob/main/syntaxes/templ.tmLanguage.json) version of the grammar file to get the latest available and, if it fails, uses a local version as a fallback.
+The package fetches the [online](https://github.com/templ-go/templ-vscode/blob/main/syntaxes/templ.tmLanguage.json) version of the grammar file.
+
+> [!NOTE]
+> A [PR](https://github.com/shikijs/textmate-grammars-themes/pull/68) has been submitted to officially add Templ language support to Shiki. This package will be used in the meantime.
 
 ![sample templ syntax](screenshot.png "Title")
 
