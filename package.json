@@ -1,6 +1,6 @@
 {
   "name": "shiki-templ",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Enabling Templ syntax highlighting in Shiki.",
   "keywords": [
     "shiki",

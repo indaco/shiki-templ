@@ -14,7 +14,7 @@
 The package fetches the [online](https://github.com/templ-go/templ-vscode/blob/main/syntaxes/templ.tmLanguage.json) version of the grammar file.
 
 > [!NOTE]
-> A [PR](https://github.com/shikijs/textmate-grammars-themes/pull/68) has been submitted to officially add Templ language support to Shiki. This package will be used in the meantime.
+> A [PR](https://github.com/shikijs/textmate-grammars-themes/pull/68) has been submitted to officially add Templ language support to Shiki. > This package will be used in the meantime.
 
 ![sample templ syntax](screenshot.png "Title")
 

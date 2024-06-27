@@ -1,5 +1,22 @@
 # Changelog
 
+## v0.2.4
+
+[compare changes](https://github.com/indaco/shiki-templ/compare/v0.2.3...v0.2.4)
+
+### 💅 Refactors
+
+- Grammar fetching logic ([ad49696](https://github.com/indaco/shiki-templ/commit/ad49696))
+
+### 🏡 Chore
+
+- Update deps ([a7bb3de](https://github.com/indaco/shiki-templ/commit/a7bb3de))
+- Bump pnpm to v9.4.0 ([0beebaa](https://github.com/indaco/shiki-templ/commit/0beebaa))
+
+### ❤️ Contributors
+
+- Indaco <github@mircoveltri.me>
+
 ## v0.2.3
 
 [compare changes](https://github.com/indaco/shiki-templ/compare/v0.2.2...v0.2.3)
