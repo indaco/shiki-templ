@@ -31,7 +31,7 @@
   "scripts": {
     "build": "tsup",
     "format": "prettier --write .",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "pnpm run build"
   },
   "devDependencies": {
     "@types/node": "^20.14.9",
@@ -44,5 +44,5 @@
   "peerDependencies": {
     "shiki": "^1.9.1"
   },
-  "packageManager": "pnpm@9.1.4"
+  "packageManager": "pnpm@9.4.0"
 }
