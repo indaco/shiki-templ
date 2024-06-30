@@ -9,6 +9,9 @@
 </div>
 <br/>
 
+> [!IMPORTANT]
+> **Shiki v1.10.0** now includes Templ language support, so this package is no longer needed. Therefore, I am archiving this repository.
+
 `shiki-templ` makes easier to use the TextMate grammar definition for [Templ](https://templ.guide) with [Shiki](https://shiki.matsu.io/).
 
 The package fetches the [online](https://github.com/templ-go/templ-vscode/blob/main/syntaxes/templ.tmLanguage.json) version of the grammar file.
